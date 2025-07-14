@@ -48,7 +48,7 @@ Logo-ul aplicației, bannerul video de pe pagina principală și imaginile din p
 
 1. Clonează acest repository:
 ```
-git clone https://github.com/alina-idk/stargazer.git
+git clone https://github.com/alina-idk/stargazer_webb_app.git
 ```
 
 
