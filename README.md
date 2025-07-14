@@ -16,6 +16,30 @@
 - **Design responsive** – optimizat atât pentru desktop, cât și pentru mobil
 - **Temă cosmică** – fundal cu gradient (#000000 → #3533cd) și steluțe strălucitoare 🌠
 
+
+## 🚧 În lucru
+
+Următoarele pagini sunt incluse în aplicație, dar nu sunt încă funcționale. Ele vor fi completate ulterior:
+
+- 🪐 **Calendar** – urmează să includă evenimente astronomice  
+- 🛰️ **Sky Today** – va afișa cerul în timp real, poate cu localizare  
+- 💫 **Facts** – va conține curiozități despre univers și sistemul solar
+
+## 🎨 Elemente de design personal
+
+Logo-ul aplicației, bannerul video de pe pagina principală și imaginile din pagina 404 au fost create personal în Canva. Acestea conferă o notă personală și unitară întregii aplicații, reflectând implicarea creativă dincolo de cod.
+
+## 🛠️ Tehnologii utilizate
+
+- React  
+- React Router DOM  
+- Context API + useReducer  
+- HTML5, CSS3, JavaScript ES6+  
+- NASA Public API ([https://api.nasa.gov/](https://api.nasa.gov/))  
+- Create React App (CRA)  
+- Git & GitHub  
+
+
 ---
 
 ## 🛠️ INSTALARE LOCALĂ
