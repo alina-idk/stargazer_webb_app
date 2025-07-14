@@ -1,0 +1,21 @@
+.favorite-button {
+  all: unset; /* resetează tot */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #a65aff;
+  user-select: none;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background: #1e1c5d;
+  box-shadow: 0 0 10px #a6a1ff88;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-button:hover {
+  background: #a6a1ff;
+  color: #1e1c5d;
+  transform: scale(1.1);
+}

@@ -1,0 +1,108 @@
+.coming-soon-container {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #000000, #3533cd);
+  overflow: hidden;
+  color: #c5c6c7;
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px #a6a1ffcc;
+}
+
+/* Buton */
+.home-btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #a6a1ff;
+  border: none;
+  border-radius: 30px;
+  color: #1e1c5d;
+  cursor: pointer;
+  box-shadow: 0 0 15px #a6a1ff88;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #c5c6c7;
+  color: #3533cd;
+  box-shadow: 0 0 20px #c5c6c7;
+  transform: scale(1.05);
+}
+
+/* Stelute care licăresc */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+.stars::before, .stars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow:
+    20px 30px white,
+    50px 80px white,
+    120px 200px white,
+    200px 120px white,
+    350px 180px white,
+    420px 300px white,
+    600px 50px white,
+    700px 100px white,
+    800px 250px white,
+    900px 150px white,
+    1000px 80px white;
+  animation: twinkle 2s infinite alternate;
+}
+
+.stars::after {
+  box-shadow:
+    30px 50px white,
+    80px 90px white,
+    150px 220px white,
+    220px 150px white,
+    380px 210px white,
+    430px 320px white,
+    610px 60px white,
+    720px 110px white,
+    820px 270px white,
+    920px 190px white,
+    1020px 100px white;
+  animation-delay: 1s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

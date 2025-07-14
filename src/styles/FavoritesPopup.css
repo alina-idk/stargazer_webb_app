@@ -1,0 +1,138 @@
+/* -- POPUP DESKTOP (overlay) -- */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #1e1c5d;
+  border-radius: 20px;
+  padding: 20px 30px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: #c5c6c7;
+  font-family: 'Comfortaa', cursive;
+  box-shadow: 0 0 25px #a6a1ffcc;
+  position: relative;
+}
+
+.close-btn {
+  background: #a6a1ff;
+  color: #1e1c5d;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 15px #a6a1ff88;
+  transition: all 0.3s ease;
+  margin: 20px auto 0;
+  display: block;
+  letter-spacing: 1.2px;
+}
+
+.close-btn:hover {
+  background: #c5c6c7;
+  color: #3533cd;
+  box-shadow: 0 0 25px #c5c6c7;
+  transform: scale(1.05);
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.favorite-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  background: #3533cd;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 0 15px #a6a1ffaa;
+}
+
+.fav-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 0 10px #a6a1ffbb;
+}
+
+.fav-info {
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  color: #f0e9ff;
+}
+
+.remove-fav-btn {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 6px;
+  line-height: 1;
+  user-select: none;
+}
+
+/* -- POPUP MOBILE mutabil -- */
+
+.favorites-popup-mobile {
+  position: fixed;
+  background: #1e1c5dcc;
+  color: #c5c6c7;
+  border-radius: 16px;
+  padding: 15px;
+  width: 260px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(166, 161, 255, 0.7);
+  z-index: 100000;
+  cursor: grab;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-popup-mobile:active {
+  cursor: grabbing;
+}
+
+/* Ascundem popup mobil pe desktop */
+@media (min-width: 768px) {
+  .favorites-popup-mobile {
+    display: none;
+  }
+}
+
+/* Ascundem popup desktop pe mobil */
+@media (max-width: 767px) {
+  .popup-overlay,
+  .popup-content {
+    display: none;
+  }
+}

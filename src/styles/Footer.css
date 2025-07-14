@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d0d2b; /* fundal cosmic */
+  color: #fff;               /* text alb */
+  font-size: 0.85rem;        /* elegant și discret */
+  border-top: 1px solid #333;/* o linie subtilă de separare */
+}
+
+

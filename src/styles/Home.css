@@ -1,0 +1,110 @@
+/* Container video banner */
+.banner-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 20px;
+}
+
+/* Video banner styling */
+.home-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Main container */
+.home-container {
+  background: linear-gradient(90deg, #000000, #3533cd);
+  color: #c5c6c7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+/* Explore button styling */
+.explore-button {
+  background: #a6a1ff; /* mov pastel */
+  color: #1e1c5d; /* albastru închis */
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 15px #a6a1ff88;
+  transition: all 0.3s ease;
+  user-select: none;
+  letter-spacing: 1.2px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.explore-button:hover {
+  background: #c5c6c7;
+  color: #3533cd;
+  box-shadow: 0 0 25px #c5c6c7;
+  transform: scale(1.05);
+}
+
+.explore-button:active {
+  transform: scale(0.95);
+}
+
+/* NASA gallery grid */
+.nasa-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+/* Container for each nasa pic */
+.nasa-pic-container {
+  width: 180px;
+  height: 200px;
+  background: #1e1c5d;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(166, 161, 255, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nasa-pic-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(166, 161, 255, 0.6);
+}
+
+.nasa-pic {
+  width: 160px !important;
+  height: 140px !important;
+  object-fit: cover !important;
+  border-radius: 18px 18px 0 0;
+  display: block;
+  margin-top: 10px;
+}
+
+.pic-title {
+  margin-top: 8px;
+  text-align: center;
+  color: #c5c6c7;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+}
+
+
+
+

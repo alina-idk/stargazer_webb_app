@@ -1,0 +1,190 @@
+.explore-container {
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #000000, #3533cd);
+  color: #c5c6c7;
+  min-height: 100vh;
+  font-family: 'Comfortaa', cursive;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #a6a1ff;
+  color: #1e1c5d;
+  box-shadow: 0 0 15px #a6a1ff88;
+  transition: 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #1e1c5dbb;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 25px #c5c6c7;
+}
+
+.search-btn {
+  background: #a6a1ff;
+  color: #1e1c5d;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px #a6a1ff88;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #c5c6c7;
+  color: #3533cd;
+  box-shadow: 0 0 20px #c5c6c7;
+  transform: scale(1.05);
+}
+
+.search-btn.active {
+  background: #3533cd;
+  color: #a6a1ff;
+  box-shadow: 0 0 25px #a6a1ff;
+  transform: scale(1.1);
+}
+
+.search-info {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.nasa-results {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.nasa-result-card {
+  background: #1e1c5d;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(166, 161, 255, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.nasa-result-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(166, 161, 255, 0.6);
+}
+
+.result-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.result-title {
+  color: #c5c6c7;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Comfortaa', cursive;
+}
+
+.fav-toggle-btn {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-top: 6px;
+  user-select: none;
+  color: #a65aff;
+  animation: pulse 2s infinite;
+  box-shadow: none !important;
+  transition: transform 0.3s ease;
+  outline: none;
+}
+
+.fav-toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 700;
+  color: #a6a1ff;
+}
+
+.loading-msg {
+  color: #ffd700;
+  animation: blink 1.5s infinite;
+}
+
+.error-msg {
+  color: #ff6b6b;
+}
+
+.no-results {
+  color: #ccc;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Wiki section */
+.wiki-result {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #1e1c5d;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(166, 161, 255, 0.4);
+  color: #c5c6c7;
+  font-family: 'Comfortaa', cursive;
+}
+
+.wiki-img {
+  max-width: 150px;
+  float: right;
+  margin-left: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #a6a1ffaa;
+}
+
+.wiki-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #a6a1ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wiki-link:hover {
+  text-decoration: underline;
+}

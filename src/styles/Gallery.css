@@ -1,0 +1,96 @@
+.gallery-container {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #000000, #3533cd);
+  color: #c5c6c7;
+  padding: 80px 20px 40px; /* top + laterale + bottom */
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+
+.gallery-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px #a6a1ffcc;
+}
+
+.loading-msg {
+  font-size: 1.2rem;
+  color: #a6a1ff;
+  animation: blink 1.5s infinite;
+  margin-bottom: 20px;
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gallery-card {
+  background: #1e1c5d;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(166, 161, 255, 0.4);
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(166, 161, 255, 0.7);
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.gallery-caption {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #c5c6c7;
+  font-family: 'Comfortaa', cursive;
+}
+
+.fav-toggle-btn {
+  all: unset;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #a65aff;
+  animation: pulse 2s infinite;
+  user-select: none;
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.fav-toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
