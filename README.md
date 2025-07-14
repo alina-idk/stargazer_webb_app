@@ -83,9 +83,11 @@ npm start
 
 ## 🧪 API NASA – CHEIA FOLOSITĂ
 
-Aplicația utilizează **DEMO_KEY** oferită public de NASA. Aceasta permite între **30 și 50 de request-uri pe oră**, suficient pentru testare și utilizare generală.
+Aplicația utilizează **DEMO_KEY** oferită public de NASA. Aceasta permite între **30 și 50 de request-uri pe oră**.
 
 
 ---
 
-## 💖 MADE WITH COSMIC LOVE BY ALINA
+## 
+🙏 Mulțumiri și feedback
+Acest proiect este o lucrare individuală, creată cu pasiune pentru cosmos și tehnologie. Feedback-ul constructiv este binevenit pentru îmbunătățiri viitoare!
